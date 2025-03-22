@@ -3,47 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>João Felipe - Portfólio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            position: relative;
-        }
-        
-        .foto {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #333;
-        }
-
-        .titulo {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
-    <img src="minha_foto.jpg" alt="Foto de João Felipe" class="foto">
-    
-    <div class="titulo">
-        Olá, sou o João Felipe!<br>
-        Venha conhecer meu portfólio em programação web.
-    </div>
+    <!-- Título no topo -->
+    <header class="titulo">
+        <h1>Olá, sou o João Felipe!</h1>
+        <p>Venha conhecer meu portfólio em programação web.</p>
+    </header>
+
+    <main class="container">
+        <!-- Seção ocupando 100% da largura -->
+        <div class="info-box">
+            <!-- Foto à esquerda -->
+            <div class="foto-container">
+                <img src="minha_foto.jpg" alt="Foto de João Felipe" class="foto">
+            </div>
+
+            <!-- Descrição à direita -->
+            <div class="descricao">
+                <h2>João Felipe</h2>
+                <p><strong>13 anos</strong></p>
+                <p>Batatais - SP</p>
+                <p>Estudante de programação</p>
+            </div>
+        </div>
+
+        <!-- Botão abaixo, separado por espaço em branco -->
+        <div class="botao-container">
+            <button class="btn">Meus Estudos</button>
+        </div>
+    </main>
 
 </body>
 </html>

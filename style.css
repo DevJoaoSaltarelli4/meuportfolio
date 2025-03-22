@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+/* Título fixo no topo */
+.titulo {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.titulo p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Seção principal ocupando 100% da largura */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Bloco de informação ocupando 100% da tela */
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto à esquerda */
+.foto-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+/* Descrição à direita */
+.descricao {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.descricao h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 20px;
+    color: #666;
+    margin: 8px 0;
+}
+
+/* Botão separado com espaço */
+.botao-container {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .foto-container {
+        margin-bottom: 20px;
+    }
+
+    .descricao {
+        padding-left: 0;
+    }
+}
