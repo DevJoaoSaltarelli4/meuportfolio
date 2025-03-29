@@ -115,8 +115,9 @@ body {
     transform: scale(1.05);
 }
 
+/* Modal */
 .modal {
-    display: none;
+    display: none; /* A modal começa oculta */
     position: fixed;
     z-index: 1;
     left: 0;

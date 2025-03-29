@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.getElementById("studyModal");
+    const modal = document.getElementById("studyModal"); // aqui esta buscando o elemento Id por nome de studyModal
     const openBtn = document.querySelector(".btn");
     const closeBtns = document.querySelectorAll(".close");
 
