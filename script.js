@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const botaoCalculadora = document.getElementById("abrirJogoMario");
+
+    botaoCalculadora.addEventListener("click", function () {
+        window.open("./jogoDoMario/jogoMario.html", "_blank"); // abre em nova aba
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const resultado = document.querySelector(".resultado");
     const botoes = document.querySelectorAll(".botao-generico");
     let expressao = "";
